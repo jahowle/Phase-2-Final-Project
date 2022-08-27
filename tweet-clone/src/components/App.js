@@ -1,11 +1,12 @@
 import '../App.css';
+import MainContent from './MainContent';
 import Sidebar from './Sidebar';
 
 function App() {
   return (
     <div className="App">
-     <h1>Tweet Clone</h1>
-     <Sidebar />
+      <Sidebar />
+      <MainContent />
     </div>
   );
 }
