@@ -1,19 +1,17 @@
 {
-  "posts": [
+  "tweets": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "user": "jonny howle",
+      "content": "Hello World",
+      "likes": 0
     }
   ],
-  "comments": [
+
+  "users": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "username": "jonny",
+      "tweets": [1]
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
