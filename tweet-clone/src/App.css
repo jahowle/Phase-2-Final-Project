@@ -13,6 +13,9 @@
   flex-direction: column;
   padding: 16px;
   box-sizing: border-box;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .main-content-container {
