@@ -20,6 +20,10 @@ function App() {
     setTweets([...tweets, newTweet])
   }
 
+  function updateUser(newUser) {
+    setUser(newUser)
+  }
+
   return (
     <div className="App">
       <Sidebar />

@@ -17,14 +17,26 @@
       "content": "hello",
       "likes": 0,
       "id": 3
+    },
+    {
+      "user": "jonny howle",
+      "content": "New Tweet",
+      "likes": 0,
+      "id": 4
     }
   ],
   "users": [
     {
+      "id": 1,
       "username": "jonny",
       "tweets": [
         1
       ]
+    },
+    {
+      "username": "Jonny",
+      "tweets": [],
+      "id": 2
     }
   ]
 }
