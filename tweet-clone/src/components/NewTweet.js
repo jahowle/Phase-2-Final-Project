@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function NewTweet({user}) {
+function NewTweet({user, updateTweets}) {
 
     const [post, setPost] = useState("")
 
@@ -16,8 +16,6 @@ function NewTweet({user}) {
             likes: 0
         }
 
-        console.log("new post", newPost)
-
         fetch('http://localhost:3000/tweets', {
             method: "POST",
             headers: {
@@ -26,7 +24,7 @@ function NewTweet({user}) {
             body: JSON.stringify(newPost)
         })
             .then((r) => r.json())
-            .then((post) => console.log(post))
+            .then((post) => updateTweets(post))
 
 
     }

@@ -16,12 +16,9 @@ function App() {
       .then((data) => setTweets(data))
   }, [])
 
-  function updateTweets(tweet) {
-    console.log("in app.js", tweet)
+  function updateTweets(newTweet) {
+    setTweets([...tweets, newTweet])
   }
-
-
-
 
   return (
     <div className="App">
@@ -31,7 +28,7 @@ function App() {
           <Login />
         </Route>
         <Route exact path="/">
-          <MainContent tweets={tweets} user={user}/>
+          <MainContent tweets={tweets} user={user} updateTweets={updateTweets}/>
         </Route>
       </Switch>
       

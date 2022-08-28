@@ -5,6 +5,18 @@
       "user": "jonny howle",
       "content": "Hello World",
       "likes": 0
+    },
+    {
+      "user": "jonny howle",
+      "content": "hi",
+      "likes": 0,
+      "id": 2
+    },
+    {
+      "user": "jonny howle",
+      "content": "hello",
+      "likes": 0,
+      "id": 3
     }
   ],
   "users": [
