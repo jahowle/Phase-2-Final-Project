@@ -16,6 +16,9 @@ function App() {
       .then((data) => setTweets(data))
   }, [])
 
+  function updateTweets(tweet) {
+    console.log("in app.js", tweet)
+  }
 
 
 

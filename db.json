@@ -7,11 +7,12 @@
       "likes": 0
     }
   ],
-
   "users": [
     {
       "username": "jonny",
-      "tweets": [1]
+      "tweets": [
+        1
+      ]
     }
   ]
 }

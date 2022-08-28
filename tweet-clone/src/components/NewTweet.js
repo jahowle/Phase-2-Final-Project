@@ -8,12 +8,27 @@ function NewTweet({user}) {
         setPost(e.target.value)
     }
 
-    function handleSubmit(tweet) {
+    function handleSubmit(e) {
+        e.preventDefault()
         const newPost = {
-            user: {user},
-            content: {post},
+            user: user,
+            content: post,
             likes: 0
         }
+
+        console.log("new post", newPost)
+
+        fetch('http://localhost:3000/tweets', {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(newPost)
+        })
+            .then((r) => r.json())
+            .then((post) => console.log(post))
+
+
     }
 
     return(
@@ -21,7 +36,7 @@ function NewTweet({user}) {
             <form>
                 <input onChange={handleSetPost} id="tweet-input" type="text" placeholder="Say something...">   
                 </input>
-                <input id="post-btn"  type="submit" value="Post"></input>
+                <input onClick={handleSubmit} id="post-btn"  type="submit" value="Post"></input>
             </form>
         </div>
     )
