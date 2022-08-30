@@ -2,6 +2,7 @@ import '../App.css';
 import MainContent from './MainContent';
 import Login from './Login';
 import Sidebar from './Sidebar';
+import Profile from './Profile';
 import { Route, Switch } from "react-router-dom";
 import React, {useState, useEffect} from 'react';
 
@@ -41,6 +42,9 @@ function App() {
       <Switch>
         <Route path="/login">
           <Login updateUser={updateUser} updateLogin={updateLogin}/>
+        </Route>
+        <Route path="/profile">
+          <Profile />
         </Route>
         <Route exact path="/">
           <MainContent tweets={tweets} user={user} updateTweets={updateTweets} userId={userId} isLoggedIn={isLoggedIn} userTweets={userTweets}/>

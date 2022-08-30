@@ -4,11 +4,14 @@ import { NavLink } from "react-router-dom";
 function Sidebar() {
     return(
         <div className="sidebar">
-            <NavLink to="/" exact>
+            <NavLink to="/">
                 Home
             </NavLink>
-            <NavLink to="/login" exact>
+            <NavLink to="/login">
                 Login
+            </NavLink>
+            <NavLink to="/profile">
+                Profile
             </NavLink>
         </div>
     )

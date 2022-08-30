@@ -5,6 +5,18 @@
       "content": "First tweet",
       "likes": 0,
       "id": 1
+    },
+    {
+      "user": "Jessica",
+      "content": "Hi, I'm Jessica",
+      "likes": 0,
+      "id": 2
+    },
+    {
+      "user": "Jonny",
+      "content": "Hi, I'm Jonny",
+      "likes": 0,
+      "id": 3
     }
   ],
   "users": [
@@ -14,6 +26,20 @@
         1
       ],
       "id": 1
+    },
+    {
+      "username": "Jessica",
+      "tweets": [
+        2
+      ],
+      "id": 2
+    },
+    {
+      "username": "Jonny",
+      "tweets": [
+        3
+      ],
+      "id": 3
     }
   ]
 }
