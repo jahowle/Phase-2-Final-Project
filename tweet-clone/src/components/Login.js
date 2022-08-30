@@ -1,6 +1,7 @@
 import React, {useState} from "react";
+import { useHistory } from "react-router-dom"; 
 
-function Login() {
+function Login({updateUser, updateLogin}) {
 
     const [username, setUsername] = useState("")
 
@@ -15,7 +16,7 @@ function Login() {
 
         const newUser = {
             username: username,
-            tweets: []
+            tweets: 0
         }
 
         fetch('http://localhost:3000/users', {
@@ -26,7 +27,9 @@ function Login() {
             body: JSON.stringify(newUser)
         })
             .then((r) => r.json())
-            .then((data) => console.log(data))
+            .then((data) => updateUser(data.username, data.id))
+
+            updateLogin()
     }
 
     return(

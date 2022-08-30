@@ -8,7 +8,11 @@ import React, {useState, useEffect} from 'react';
 function App() {
 
   const [tweets, setTweets] = useState([]);
-  const [user, setUser] = useState("jonny howle")
+  const [user, setUser] = useState("")
+  const [userId, setUserId] = useState(0)
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const [userTweets, setUserTweets] = useState([])
+  
 
   useEffect(() => {
     fetch("http://localhost:3000/tweets")
@@ -18,10 +22,17 @@ function App() {
 
   function updateTweets(newTweet) {
     setTweets([...tweets, newTweet])
+    setUserTweets([...userTweets, newTweet.id])
   }
 
-  function updateUser(newUser) {
+  function updateUser(newUser, newUserId) {
     setUser(newUser)
+    setUserId(newUserId)
+
+  }
+
+  function updateLogin() {
+    setIsLoggedIn(!isLoggedIn)
   }
 
   return (
@@ -29,10 +40,10 @@ function App() {
       <Sidebar />
       <Switch>
         <Route path="/login">
-          <Login />
+          <Login updateUser={updateUser} updateLogin={updateLogin}/>
         </Route>
         <Route exact path="/">
-          <MainContent tweets={tweets} user={user} updateTweets={updateTweets}/>
+          <MainContent tweets={tweets} user={user} updateTweets={updateTweets} userId={userId} isLoggedIn={isLoggedIn} userTweets={userTweets}/>
         </Route>
       </Switch>
       

@@ -1,42 +1,19 @@
 {
   "tweets": [
     {
-      "id": 1,
-      "user": "jonny howle",
-      "content": "Hello World",
-      "likes": 0
-    },
-    {
-      "user": "jonny howle",
-      "content": "hi",
+      "user": "Bill",
+      "content": "First tweet",
       "likes": 0,
-      "id": 2
-    },
-    {
-      "user": "jonny howle",
-      "content": "hello",
-      "likes": 0,
-      "id": 3
-    },
-    {
-      "user": "jonny howle",
-      "content": "New Tweet",
-      "likes": 0,
-      "id": 4
+      "id": 1
     }
   ],
   "users": [
     {
-      "id": 1,
-      "username": "jonny",
+      "username": "Bill",
       "tweets": [
         1
-      ]
-    },
-    {
-      "username": "Jonny",
-      "tweets": [],
-      "id": 2
+      ],
+      "id": 1
     }
   ]
 }

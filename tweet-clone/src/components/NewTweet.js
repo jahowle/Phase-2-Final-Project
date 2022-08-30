@@ -1,12 +1,14 @@
 import React, {useState} from "react";
 
-function NewTweet({user, updateTweets}) {
+function NewTweet({user, updateTweets, userId}) {
 
     const [post, setPost] = useState("")
+    const [userTweetArray, setUserTweetArray] = ([])
 
     function handleSetPost(e) {
         setPost(e.target.value)
     }
+
 
     function handleSubmit(e) {
         e.preventDefault()
@@ -24,7 +26,10 @@ function NewTweet({user, updateTweets}) {
             body: JSON.stringify(newPost)
         })
             .then((r) => r.json())
-            .then((post) => updateTweets(post))
+            .then((post) => {
+                updateTweets(post)
+            })
+        
 
 
     }
