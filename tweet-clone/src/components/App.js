@@ -23,7 +23,7 @@ function App() {
 
   function updateTweets(newTweet) {
     setTweets([...tweets, newTweet])
-    setUserTweets([...userTweets, newTweet.id])
+    setUserTweets([...userTweets, newTweet])
   }
 
   function updateUser(newUser, newUserId) {
@@ -44,7 +44,7 @@ function App() {
           <Login updateUser={updateUser} updateLogin={updateLogin}/>
         </Route>
         <Route path="/profile">
-          <Profile />
+          <Profile userTweets={userTweets} user={user}/>
         </Route>
         <Route exact path="/">
           <MainContent tweets={tweets} user={user} updateTweets={updateTweets} userId={userId} isLoggedIn={isLoggedIn} userTweets={userTweets}/>

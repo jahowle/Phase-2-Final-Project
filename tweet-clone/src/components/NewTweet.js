@@ -15,7 +15,6 @@ function NewTweet({user, updateTweets, userId}) {
         const newPost = {
             user: user,
             content: post,
-            likes: 0
         }
 
         fetch('http://localhost:3000/tweets', {
