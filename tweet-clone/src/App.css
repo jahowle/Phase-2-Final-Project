@@ -113,6 +113,10 @@ a:active {
   
 }
 
+#post-btn:hover {
+  background-color: rgb(197, 214, 229);
+}
+
 #tweet-form {
   width: 100%;
   display: flex;

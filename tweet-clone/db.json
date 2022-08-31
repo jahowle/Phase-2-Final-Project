@@ -9,6 +9,11 @@
       "user": "Jonny",
       "content": "Second Tweet",
       "id": 2
+    },
+    {
+      "user": "Billy",
+      "content": "",
+      "id": 3
     }
   ],
   "users": [
@@ -41,7 +46,13 @@
     },
     {
       "username": "Billy",
-      "tweets": [],
+      "tweets": [
+        {
+          "user": "Billy",
+          "content": "",
+          "id": 3
+        }
+      ],
       "id": 4
     }
   ]
