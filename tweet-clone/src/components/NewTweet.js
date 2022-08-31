@@ -1,9 +1,8 @@
 import React, {useState} from "react";
 
-function NewTweet({user, updateTweets, userId}) {
+function NewTweet({user, updateTweets}) {
 
     const [post, setPost] = useState("")
-    const [userTweetArray, setUserTweetArray] = ([])
 
     function handleSetPost(e) {
         setPost(e.target.value)

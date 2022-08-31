@@ -1,13 +1,9 @@
 import React, {useState} from "react";
-import { useHistory } from "react-router-dom"; 
 
 function Login({updateUser, updateLogin}) {
     // const history = useHistory();
     const [username, setUsername] = useState("")
 
-    function redirect() {
-        
-    }
 
 
     function handleLogin(e) {
