@@ -33,11 +33,11 @@ function NewTweet({user, updateTweets}) {
     }
 
     return(
-        <div id="new-tweet">
-            <form id="tweet-form">
-                <input onChange={handleSetPost} id="tweet-input" type="text" placeholder="Say something...">   
+        <div className="form-wrap">
+            <form className="form">
+                <input onChange={handleSetPost} className="input" type="text" placeholder="Say something...">   
                 </input>
-                <input onClick={handleSubmit} id="post-btn"  type="submit" value="Post"></input>
+                <input onClick={handleSubmit} className="submit-btn"  type="submit" value="Post"></input>
             </form>
         </div>
     )

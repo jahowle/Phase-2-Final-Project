@@ -24,7 +24,7 @@
   width: 100%
 }
 
-#new-tweet {
+.form-wrap {
   height: auto;
   width: 600px;
   background-color: rgb(255, 255, 255);
@@ -89,7 +89,7 @@ a:active {
   text-decoration: underline;
 }
 
-#tweet-input {
+.input {
   width: 100%;
   height: 32px;
   margin-right: 4px;
@@ -99,7 +99,7 @@ a:active {
   border-style: solid;
 }
 
-#post-btn {
+.submit-btn {
   height: 38px;
   padding-left: 16px;
   padding-right: 16px;
@@ -113,11 +113,11 @@ a:active {
   
 }
 
-#post-btn:hover {
+.submit-btn:hover {
   background-color: rgb(197, 214, 229);
 }
 
-#tweet-form {
+.form {
   width: 100%;
   display: flex;
   justify-content: center;
