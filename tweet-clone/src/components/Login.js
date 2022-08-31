@@ -38,11 +38,11 @@ function Login({updateUser, updateLogin}) {
         <div className="main-content-container">
             <div className="centered-column">
                 <h1>Login</h1>
-                <div id="login">
-                    <form onSubmit={handleSubmit}>
-                        <input onChange={handleLogin} type="text" placeholder="Enter Username">
+                <div className="form-wrap">
+                    <form className="form" onSubmit={handleSubmit}>
+                        <input className="input" onChange={handleLogin} type="text" placeholder="Enter Username">
                         </input>
-                        <input type="submit">
+                        <input className="submit-btn" type="submit">
                         </input>
                     </form>
                 </div>
