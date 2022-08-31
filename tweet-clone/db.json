@@ -38,6 +38,11 @@
       "username": "Bill",
       "tweets": [],
       "id": 3
+    },
+    {
+      "username": "Billy",
+      "tweets": [],
+      "id": 4
     }
   ]
 }

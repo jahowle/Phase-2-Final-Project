@@ -34,7 +34,7 @@ function NewTweet({user, updateTweets}) {
 
     return(
         <div id="new-tweet">
-            <form>
+            <form id="tweet-form">
                 <input onChange={handleSetPost} id="tweet-input" type="text" placeholder="Say something...">   
                 </input>
                 <input onClick={handleSubmit} id="post-btn"  type="submit" value="Post"></input>
