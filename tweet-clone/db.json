@@ -4,6 +4,11 @@
       "user": "Jonny",
       "content": "First Tweet",
       "id": 1
+    },
+    {
+      "user": "Jonny",
+      "content": "Second Tweet",
+      "id": 2
     }
   ],
   "users": [
@@ -17,6 +22,22 @@
         }
       ],
       "id": 1
+    },
+    {
+      "username": "Jonny",
+      "tweets": [
+        {
+          "user": "Jonny",
+          "content": "Second Tweet",
+          "id": 2
+        }
+      ],
+      "id": 2
+    },
+    {
+      "username": "Bill",
+      "tweets": [],
+      "id": 3
     }
   ]
 }

@@ -1,7 +1,8 @@
 import React, {useState} from "react";
+import { useHistory } from "react-router-dom"
 
 function Login({updateUser, updateLogin}) {
-    // const history = useHistory();
+    const history = useHistory();
     const [username, setUsername] = useState("")
 
 
@@ -30,7 +31,7 @@ function Login({updateUser, updateLogin}) {
             .then((data) => updateUser(data.username, data.id))
 
             updateLogin()
-            // history.push("/");
+            history.push("/");
     }
 
     return(
