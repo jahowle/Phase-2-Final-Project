@@ -5,6 +5,11 @@
       "content": "Tacos",
       "likes": 0,
       "id": 1
+    },
+    {
+      "user": "Dan",
+      "content": "Hey",
+      "id": 2
     }
   ],
   "users": [
@@ -19,6 +24,17 @@
         }
       ],
       "id": 1
+    },
+    {
+      "username": "Dan",
+      "tweets": [
+        {
+          "user": "Dan",
+          "content": "Hey",
+          "id": 2
+        }
+      ],
+      "id": 2
     }
   ]
 }

@@ -25,11 +25,14 @@
 }
 
 #new-tweet {
-  height: 100px;
+  height: auto;
   width: 600px;
   background-color: rgb(255, 255, 255);
   border-radius: 8px;
-  padding: 16px
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+
 }
 
 .tweet {
@@ -84,4 +87,28 @@ a:hover {
 
 a:active {
   text-decoration: underline;
+}
+
+#tweet-input {
+  width: auto;
+  height: 32px;
+  margin-right: 4px;
+  font-size: 16px;
+  border-color:aliceblue;
+  border-radius: 8px;
+  border-style: solid;
+}
+
+#post-btn {
+  height: 38px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-right: 4px;
+  font-size: 16px;
+  border-style: solid;
+  border-radius: 8px;
+  border-color: aliceblue;
+  background-color: aliceblue;
+  flex-basis: content;
+  
 }
