@@ -1,0 +1,22 @@
+{
+  "tweets": [
+    {
+      "user": "Jonny",
+      "content": "First Tweet",
+      "id": 1
+    }
+  ],
+  "users": [
+    {
+      "username": "Jonny",
+      "tweets": [
+        {
+          "user": "Jonny",
+          "content": "First Tweet",
+          "id": 1
+        }
+      ],
+      "id": 1
+    }
+  ]
+}
