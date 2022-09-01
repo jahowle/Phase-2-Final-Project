@@ -14,6 +14,11 @@
       "user": "Billy",
       "content": "",
       "id": 3
+    },
+    {
+      "user": "Bill",
+      "content": "Heeeyyy",
+      "id": 4
     }
   ],
   "users": [
@@ -54,6 +59,17 @@
         }
       ],
       "id": 4
+    },
+    {
+      "username": "Bill",
+      "tweets": [
+        {
+          "user": "Bill",
+          "content": "Heeeyyy",
+          "id": 4
+        }
+      ],
+      "id": 5
     }
   ]
 }
