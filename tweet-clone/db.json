@@ -70,6 +70,16 @@
         }
       ],
       "id": 5
+    },
+    {
+      "username": "James",
+      "tweets": [],
+      "id": 6
+    },
+    {
+      "username": "Blake",
+      "tweets": [],
+      "id": 7
     }
   ]
 }
