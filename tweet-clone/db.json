@@ -80,6 +80,16 @@
       "username": "Blake",
       "tweets": [],
       "id": 7
+    },
+    {
+      "username": "Jonny",
+      "tweets": [],
+      "id": 8
+    },
+    {
+      "username": "Billy",
+      "tweets": [],
+      "id": 9
     }
   ]
 }

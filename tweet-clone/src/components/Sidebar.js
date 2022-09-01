@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-function Sidebar() {
+function Sidebar({isLoggedIn}) {
     return(
         <div className="sidebar">
             <button className="nav-button">
@@ -11,9 +11,13 @@ function Sidebar() {
             </button>
            
             <button className="nav-button"> 
-            <NavLink to="/login" exact>
-                Login
-            </NavLink>
+            {isLoggedIn ? 
+                <NavLink to="/login" exact>
+                    Logout
+                </NavLink> : 
+                <NavLink to="/login" exact>
+                    Login</NavLink>    
+            }
             </button>
            
            <button className="nav-button">

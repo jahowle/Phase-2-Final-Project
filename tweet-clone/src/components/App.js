@@ -38,7 +38,7 @@ function App() {
 
   return (
     <div className="App">
-      <Sidebar />
+      <Sidebar isLoggedIn={isLoggedIn}/>
       <Switch>
         <Route path="/login">
           <Login updateUser={updateUser} updateLogin={updateLogin}/>
