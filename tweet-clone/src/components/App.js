@@ -21,6 +21,10 @@ function App() {
       .then((data) => setTweets(data))
   }, [])
 
+  function handleLogout() {
+    setIsLoggedIn(!isLoggedIn)
+  }
+
   function updateTweets(newTweet) {
     setTweets([...tweets, newTweet])
     setUserTweets([...userTweets, newTweet])
@@ -38,7 +42,7 @@ function App() {
 
   return (
     <div className="App">
-      <Sidebar isLoggedIn={isLoggedIn}/>
+      <Sidebar isLoggedIn={isLoggedIn} handleLogout={handleLogout}/>
       <Switch>
         <Route path="/login">
           <Login updateUser={updateUser} updateLogin={updateLogin}/>
